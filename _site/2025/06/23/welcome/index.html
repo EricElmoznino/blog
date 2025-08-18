@@ -82,22 +82,22 @@
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
-<script type="text/javascript" async
-	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+<script>
+  MathJax = {
+    loader: {
+      load: ['input/tex-base', 'output/chtml', 'ui/menu', '[tex]/require', '[tex]/ams']
+    },
+    output: {
+      font: 'mathjax-newcm'
+    },
+    tex: {
+      packages: {'[+]': ['require', 'ams']},
+      inlineMath: {'[+]': [['$', '$'], ['\\(', '\\)']]},
+    }
+  };
 </script>
 
-<script type="text/x-mathjax-config">
-   MathJax.Hub.Config({
-     extensions: ["tex2jax.js"],
-     jax: ["input/TeX", "output/HTML-CSS"],
-     tex2jax: {
-       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-       processEscapes: true
-     },
-     "HTML-CSS": { availableFonts: ["TeX"] }
-   });
-</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/startup.js"></script>
 
 <!-- end custom head snippets -->
 
@@ -322,7 +322,9 @@ $$
 \int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
 $$
 
-<figure class=""><img src="/blog/assets/images/compositionality_complexity/tmp.jpg"
+<figure
+ 
+ class=""><img src="/blog/assets/images/compositionality_complexity/tmp.jpg"
        alt=""><figcaption>
       Figure 1: My first plot.
 
@@ -365,6 +367,15 @@ $$
 
 
       
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/blog/2025/08/18/defining-compositionality/" class="pagination--pager" title="Defining and quantifying compositional structure">Next</a>
+    
+  </nav>
+
 
     </div>
 
