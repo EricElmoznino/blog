@@ -65,7 +65,7 @@ For a very abstract definition such as this one, there’s no substitute for con
 
 **Brief notation**
 
-To avoid things getting to cumbersome, it’s time to introduce a tiny bit of notation. I’ll call a program $x$ and its best library (the one that best compresses it) $m_x$. I’ll denote the parts that we decomposed the program into with subscripts. We’ll just consider splitting the program into two parts for the moment, so that gives us $x_a$ and $x_b$ as well as their corresponding best libraries $m_{x_a}$ and $m_{x_b}$. We also said that we’re quantifying novel compositional structure as the degree to which the library of the whole *changes* from the libraries of the parts, which implies some sort of distance metric. We’ll call this distance $K(m_x \mid m_{x_a}, m_{x_b})$ for reasons that will become more clear in [section 2](#section-2--a-formal-definition-for-quantifying-compositionality).
+To avoid things getting to cumbersome, it’s time to introduce a tiny bit of notation. I’ll call a program $x$ and its best library (the one that best compresses it) $m_x$. I’ll denote the parts that we decomposed the program into with subscripts. We’ll just consider splitting the program into two parts for the moment, so that gives us $x_a$ and $x_b$ as well as their corresponding best libraries $m_{x_a}$ and $m_{x_b}$. We also said that we’re quantifying novel compositional structure as the degree to which the library of the whole *changes* from the libraries of the parts, which implies some sort of distance metric. We’ll call this distance $K(m_x \mid m_{x_a}, m_{x_b})$ for reasons that will become clearer in [section 2](#section-2--a-formal-definition-for-quantifying-compositionality).
 
 **Novel shared structure: compositional**
 
