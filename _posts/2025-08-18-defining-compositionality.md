@@ -42,7 +42,7 @@ I don’t think any of these high-level signatures of compositionality are parti
 
 One of the key challenges is to specify *which* library we’re talking about, since any program can be implemented using an infinite number of possible libraries while remaining functionally identical. Is there any way to do this in a non-arbitrary way? For a given program that one might want to implement, is there a notion of the “correct” library one should write, or a library that is intrinsic to the program?
 
-I turns out that there is, and it can be arrived at through the goal of *compression*. Think of what any good programmer would try and do: they would write the reusable code like functions and classes in a way that makes the total length of the program *shortest*. Other than for reasons of clarity, no programmer would insist on writing a function for some piece of code that is only going to be executed a single time in the program, because doing so wouldn’t help make the program more concise as a whole.
+It turns out that there is, and it can be arrived at through the goal of *compression*. Think of what any good programmer would try and do: they would write the reusable code like functions and classes in a way that makes the total length of the program *shortest*. Other than for reasons of clarity, no programmer would insist on writing a function for some piece of code that is only going to be executed a single time in the program, because doing so wouldn’t help make the program more concise as a whole.
 
 ## Growing and refactoring libraries
 
